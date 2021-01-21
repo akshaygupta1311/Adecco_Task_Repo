@@ -24,6 +24,3 @@ stages:
       inputs:
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        containerRegistry: 'ACRTestEnvAkshay'
-        tags: |
-          $(tag)
