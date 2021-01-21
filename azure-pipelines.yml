@@ -23,8 +23,7 @@ stages:
     - task: Docker@2
       inputs:
         command: 'buildAndPush'
-        repository: $(imageRepository)
         Dockerfile: '**/Dockerfile'
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: 'ACRTestEnvAkshay'
         tags: |
           $(tag)
